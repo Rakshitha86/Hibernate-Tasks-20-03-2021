@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register page</title>
+<style type="text/css">
+body {
+	 background-color: aqua;  
+}
+
+.center-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	padding: 20px;
+	background-color:  lime ;
+	/* background-origin: 2px solid red;*/
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	border: 5px solid solid;
+	box-shadow: 1px 7px 6px 5px rgb(255, 0, 76);
+}
+
+.center-screen>div {
+	padding: 5px;
+}
+
+input {
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+
+input::placeholder {
+	text-align: center;
+}
+
+.submit {
+	background-color: rgb(43, 176, 228);
+	height: 39px;
+	width: 209px;
+	border-radius: 5px;
+	font-size: 20px;
+	color: brown;
+}
+
+.submit:hover {
+	background-color: maroon;
+	color: darkmagenta;
+}
+</style>
+</head>
+	<body>
+	<header style="background-color: orange;">
+	<h1 style="font-size: 40px; color: purple; text-align: center;">Registration Page</h1>
+	</header>
+	<marquee style="font-size: 40px; font-style:italic; color:maroon; background-color: gray;">Welcome</marquee>
+	<form action="registerpageurl" method="post" >
+	<div class="center-screen">
+	
+	<h1 style="font-size: 40px; color: purple; text-align: center;">Register Here</h1>
+	<div><label>First Name</label></div>
+	<div><input type="text" name="Fname" placeholder="Enter first name" autocomplete="off"></div>
+	
+	<div><label>Last Name</label></div>
+	<div><input type="text"  name="Lname" placeholder="Enter last name" autocomplete="off"></div>
+	
+	<div><label>EmailId</label></div>
+	<div><input type="email"  name="id" placeholder="Enter email id" autocomplete="off"></div>
+	
+	<div><label>Address</label></div>
+	<div><textarea rows="4" cols="20" name="address" placeholder=""></textarea></div>
+	
+	<div><label>User Name</label></div>
+	<div><input type="text"  name="Uname" placeholder="Enter username" autocomplete="off"></div>
+	
+	<div><label>Create Password</label></div>
+	<div><input type="password"  name="pass" placeholder="Enter password" autocomplete="off"></div>
+	
+	<div><label>Confirm Password</label></div>
+	<div><input type="password"  name="Conpass" placeholder="Confirm password"></div>
+	
+	 <input type="submit" value="Register">
+	 <input type="reset" value="Reset"> 
+	
+	</div>
+	</form>
+	<!--<footer style="background-color: orange;text-align: right; font-size: 20px;color: blue;">All right Reserved &copy;2021</footer>-->
+</body>
+</html>
